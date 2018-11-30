@@ -59,8 +59,7 @@ defaults:
     is-featured:
     email:
 url: https://www.buhosocial.mx
-description: Listen Up provides a bespoke 360 promotional service offering radio,
-  club, online and print campaigns in the UK and worldwide.
+description: Somos una agencia de comunicación de Guadalajara especializada en comunicación y generacion de contenido en redes sociales.
 permalink: pretty
 exclude:
 - bower.json
