@@ -1,0 +1,16 @@
+<div class="excerpt">
+    <a href="{{ project.url }}">
+
+    <div class="grid-x align-center-middle excerpt__title">
+      <div class="small-12 cell text-center text-uppercase">
+        <h4 class="secondary-font margin-bottom-0">{{ project.title }}</h4>
+      </div>
+    </div>
+
+    <div class="excerpt__image">
+      {% assign image = client.image %}
+      <img src="{{project.image}}" alt="">
+    </div>
+
+    </a>
+</div>

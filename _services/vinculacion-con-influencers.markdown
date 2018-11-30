@@ -1,0 +1,9 @@
+---
+title: Vinculación con Influencers
+position: 5
+service: streaming-promotion
+subtitle: Coordinación de intercambios publicitarios con Influencers
+layout:
+---
+
+Hoy en día las plataformas de redes sociales más efectivas pueden reducirse a un perfil. Siempre y cuando este cuente con el alcance a los seguidores reales que tengan los intereses de tu marca. Conectamos con influencers reales mediante una previa valoración de sus perfiles para generar los resultados que quieres lograr con esta estrategia.

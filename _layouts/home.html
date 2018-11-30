@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<body id="home"></body>
+<section class="hero" style="background-image: url({{page.hero-image}})">
+
+  {% include navigation.html %}
+
+  <div class="grid-y align-center align-center height-100" data-aos="fade-up">
+    <div class="small-6 medium-8 large-8 cell text-center">
+      <h1 class="white secondary-font text-uppercase">Búho social</h1>
+      <h4 class="hide-for-small-only white">Proyectamos el valor de tu marca en redes sociales</h4>
+      <!-- <h2 class="typed secondary-font text-uppercase hide-for-small-only"><span id="typed"></span></h2> -->
+    </div>
+  </div>
+
+  <div class="grid-x hero__arrow">
+    <div class="small-12 cell text-center" data-smooth-scroll>
+      <a href="#home-intro"><svg class="icon icon-arrow-down8"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow-down8"></use></svg></a>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Intro -->
+<div class="grid-container padding-vertical-2" id="home-intro">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 large-12 cell text-center">
+      <h3>{{page.content}}<a class="primary-color" href="/team/">Leer mas...</a> </h3>
+    </div>
+  </div>
+</div>
+<!-- End Intro -->
+
+<!-- Front Clients -->
+<div class="grid-container">
+<h4 class="primary-color">Casos de éxito</h4>
+<div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2">
+  {% assign clients = site.clients | sort: 'position' | where: "is-home-featured", "true" | sample:9 %}
+  {% for project in clients %}
+    <div class="cell">
+    {% include excerpt.html %}
+    </div>
+  {% endfor %}
+</div>
+</div>
+<!-- End Front Clients -->
+
+<!-- Services -->
+<div class="grid-container">
+<div class="grid-x grid-padding-x grid-padding-y">
+
+  <div class="small-12 medium-3 cell show-for-medium">
+  <h4 class="primary-color">Servicios</h4>
+  </div>
+
+  <div class="small-12 medium-9 cell text-center medium-text-left">
+  {% assign services = site.services | sort: 'position' %}
+  {% for service in services %}
+  <div class="margin-bottom-2">
+  <h3 class="primary-font">{{ service.title }}</h3>
+  <h4 class="secondary-color">{{ service.subtitle }}</h4>
+  <p>{{ service.excerpt }}</p>
+  <!-- <a href="{{ service.url }}" class="plus">More</a> -->
+  </div>
+  {% endfor %}
+  </div>
+
+</div>
+</div>
+<!-- End Services -->
+
+<!-- Bottom -->
+<div class="grid-container full bottom">
+    <!-- Subscribe -->
+    {% include subscribe.html %}
+    <!-- End Subscribe -->
+</div>
+<!--  End Bottom-->

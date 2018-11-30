@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<!-- Intro -->
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y align-center">
+    <div class="small-12 medium-10 cell text-center">
+      <h3>{{page.intro}}</h3>
+    </div>
+  </div>
+</div>
+<!-- End Intro -->
+
+<!-- Featured Clients -->
+<div class="grid-container">
+<div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2">
+
+  {% for image in page.images %}
+    <div class="cell">
+    <img src="{{image.image}}" alt="">
+    </div>
+  {% endfor %}
+</div>
+</div>
+<!-- End Featured Clients -->
+
+<!-- Clients List -->
+<div class="grid-container padding-bottom-3">
+
+  <!-- Clients Category  -->
+    <div class="grid-x grid-padding-x grid-padding-y">
+
+      <div class="small-12 medium-3 cell">
+        <h3 class="primary-font">Nuestros clientes</h3>
+      </div>
+
+      <div class="small-12 medium-9 cell">
+        <div class="grid-x small-up-1 medium-up-2">
+        {% assign clients = site.clients | sort: 'title' %}
+        {% for client in clients %}
+          {% if client.tags contains 'venue' %}
+            <div class="cell">
+              {% include link.html %}
+            </div>
+          {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  <!-- End Clients Category - Venues -->
+</div>
+<!-- End Clients List -->
