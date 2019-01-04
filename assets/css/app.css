@@ -11,6 +11,24 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Graphik Light';
+  src: url("../fonts/graphik-light.woff2") format("woff2"), url("../fonts/graphik-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Apercu';
+  src: url("../fonts/apercu-regular.woff2") format("woff2"), url("../fonts/apercu-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Calibre';
+  src: url("../fonts/Calibre-SemiBold.woff2") format("woff2"), url("../fonts/Calibre-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
 body[data-aos-duration='50'] [data-aos], [data-aos][data-aos][data-aos-duration='50'] {
   transition-duration: 50ms; }
 
@@ -1606,7 +1624,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Larsseit Regular", sans-serif;
+  font-family: "Apercu", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #222222;
@@ -4410,7 +4428,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Larsseit Regular", sans-serif;
+  font-family: "Apercu", sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -7554,10 +7572,10 @@ p a {
   border-bottom: 1px solid #222222; }
 
 .primary-font {
-  font-family: "Larsseit Regular", sans-serif; }
+  font-family: "Apercu", sans-serif; }
 
 .secondary-font {
-  font-family: "Sharp Sans No1 Black", sans-serif;
+  font-family: "Calibre", sans-serif;
   letter-spacing: .035em; }
 
 .navigation .cell {
