@@ -1,7 +1,7 @@
 ---
-title: Fernanda
+title: Fernanda Álvarez
 position: 1
-image: "/uploads/vivi.jpg"
+image: "/uploads/fernanda.jpg"
 job-title: Socio | Ciencias de la Comunicación
 is-featured: true
 email:
